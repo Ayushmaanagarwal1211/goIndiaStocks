@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card{
+  border-radius: 15px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2);
+  border-right: solid rgb(202, 190, 190) 4px;
+}
+@media only screen and (min-width:351px){
+  .img{
+    width: 100px;
+    height:100px;
+   } 
+}
+ @media only screen and (max-width:350px){
+  .img{
+    width: 50px;
+    height:50px;
+   } 
+}
+
+ .sidebarAnimate{
+  animation: side 0.1s ease-in forwards ;
+ }
+ @keyframes side {
+  from{
+    width: 0px;
+  }to{
+    width: 20vw;
+  }
+ }
+
+ .arrowanimator{
+  animation: arrowAnimateToRight 0.1s ease-in forwards ;
+ }
+ @keyframes arrowAnimateToRight {
+  from{
+    left: 0px;
+  }to{
+    left: 18vw;
+  }
+ } 
+
+.sideBorder{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ .discussiona{
+  animation: discussionAnimatea 0.1s ease-in both ;
+ }
+ @keyframes discussionAnimatea {
+  from{
+    width: 73%;
+  }to{
+    width: 58%;
+  }
+ }
+ .inMobileAnimate{
+  animation: sideMobilee 0.1s ease-in forwards ;
+
+ }
+ @keyframes sideMobilee {
+  from{
+    width: 0px;
+  }to{
+    width: 70%;
+  }
+ }
